@@ -1,0 +1,35 @@
+{
+    "name": "georgringer/eventnews-address",
+    "type": "typo3-cms-extension",
+    "description": "Extend EXT:news with links to tt_address",
+    "keywords": [
+        "TYPO3",
+        "extension",
+        "eventnews",
+        "address"
+    ],
+    "homepage": "https://ringer.it",
+    "authors": [
+        {
+            "name": "Georg Ringer",
+            "role": "Developer"
+        }
+    ],
+    "license": ["GPL-2.0-or-later"],
+    "require": {
+        "georgringer/news": "^8 || ^9",
+        "friendsoftypo3/tt-address": "^5 || ^6",
+        "georgringer/eventnews": "^4 || ^5",
+        "typo3/cms-core": "^10 || ^11"
+    },
+    "autoload": {
+        "psr-4": {
+            "GeorgRinger\\EventnewsAddress\\": "Classes"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "eventnews_address"
+        }
+    }
+}
