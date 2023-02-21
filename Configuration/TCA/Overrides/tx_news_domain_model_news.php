@@ -16,7 +16,8 @@ $fields = [
                 ['', 0],
             ],
             'foreign_table' => 'tt_address',
-            'foreign_table_where' => 'ORDER BY tt_address.name',
+            'foreign_table_where' => 'AND tt_address.pid=###PAGE_TSCONFIG_ID### AND tt_address.sys_language_uid IN (-1,0) ORDER BY tt_address.name',			
+			
             'minitems' => 0,
             'maxitems' => 1
         ],
@@ -33,7 +34,7 @@ $fields = [
                 ['', 0],
             ],
             'foreign_table' => 'tt_address',
-            'foreign_table_where' => 'ORDER BY tt_address.name',
+            'foreign_table_where' => 'AND tt_address.pid=###PAGE_TSCONFIG_ID### AND tt_address.sys_language_uid IN (-1,0) ORDER BY tt_address.name',		
             'minitems' => 0,
             'maxitems' => 1,
         ],
